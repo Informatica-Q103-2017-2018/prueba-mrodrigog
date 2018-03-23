@@ -3,8 +3,10 @@ int main()
 {
 int year;
 _Bool isBisiesto;
+//Uso printf
 printf("Indique el año.\n");
 scanf(" %d", &year);
+//Asigno valor al Bool
 isBisiesto = ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
 if (isBisiesto)
 printf("El año %d es bisiesto.\n", year);
